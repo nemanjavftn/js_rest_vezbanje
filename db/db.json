@@ -1,0 +1,11 @@
+{
+  "books": [
+    {
+      "id": 4,
+      "title": "Hari Poter",
+      "author": "Rouling",
+      "category": "Fantastika",
+      "numberOfPages": 500
+    }
+  ]
+}
