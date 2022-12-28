@@ -8,7 +8,7 @@ const id = getQueryStringParameterByName('id');
 
 if (id) {
     // izmena -> "dovucemo" podatke o knjizi
-    fetch('http://localhost:3000/books/' + id)
+    fetch(baseUrl + '/books/' + id)
         .then(response => response.json())
         .then(book => {
             titleInput.value = book.title;
@@ -39,7 +39,7 @@ saveBtn.addEventListener('click', () => {
     // PUT se koristi za izmenu
 
     let httpMethod = 'POST';
-    let url = 'http://localhost:3000/books';
+    let url = baseUrl + '/books';
     if (id) {
         httpMethod = 'PUT';
         url += '/' + id;

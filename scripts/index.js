@@ -3,7 +3,7 @@ let id = null;
 
 function getBooks() {
     bookTblBody.innerHTML = '';
-    fetch('http://localhost:3000/books')
+    fetch(baseUrl + '/books')
         .then(response => response.json())
         .then(books => {
             books.forEach(book => {
@@ -36,7 +36,7 @@ function deleteBook(bookId) {
 }
 
 function confirmBookDelete() {
-    fetch('http://localhost:3000/books/' + id, {
+    fetch(baseUrl + '/books/' + id, {
         method: 'DELETE'
     }).then(() => {
         getBooks();

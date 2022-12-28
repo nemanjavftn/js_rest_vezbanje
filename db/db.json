@@ -6,6 +6,13 @@
       "author": "Rouling",
       "category": "Fantastika",
       "numberOfPages": 500
+    },
+    {
+      "title": "Gospodar prstenova",
+      "author": "Tolkin",
+      "category": "Triler",
+      "numberOfPages": 500,
+      "id": 5
     }
   ]
 }
